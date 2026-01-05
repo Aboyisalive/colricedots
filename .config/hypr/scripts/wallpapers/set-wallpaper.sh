@@ -17,10 +17,7 @@ SELECTED_FILE=$(echo "$FILE_LIST" | wofi --dmenu --prompt "Select wallpaper")
 
 WALL="$WALL_DIR/$SELECTED_FILE"
 echo "Setting wallpaper: $SELECTED_FILE"
-
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$WALL"
-hyprctl hyprpaper wallpaper ", $WALL"
+swww img --transition-type center --transition-step 90 "$WALL"
 echo "Wallpaper set successfully"
 
 if command -v wal >/dev/null 2>&1; then
@@ -59,4 +56,4 @@ if command -v wal >/dev/null 2>&1; then
 else
     echo "Pywal not installed, skipping"
 fi
-echo "All done!"cho "All done!"
+echo "All done!"

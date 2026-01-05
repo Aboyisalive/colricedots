@@ -2,12 +2,9 @@
 set -eu
 
 WALL=$1
-echo "setting $WALL as wallpaper"
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$WALL"
-hyprctl hyprpaper wallpaper ", $WALL"
-echo "set $WALL as wallpaper sucessfuly"
 
+swww img --transition-type center --transition-step 90 "$WALL"
+echo "Wallpaper set successfully"
 
 
 if command -v wal >/dev/null 2>&1; then
