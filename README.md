@@ -20,8 +20,8 @@ Welcome to my Hyprland Rice configuration! This setup is designed to provide a c
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/mkhmtolzhas/mkhmtdots
-    cd mkhmtdots
+    git clone https://github.com/Aboyisalive/colricedots
+    cd colricedots 
     ```
 
 2. Install the required dependencies:
