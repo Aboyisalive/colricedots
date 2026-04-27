@@ -1,0 +1,119 @@
+@import "../../.cache/wal/colors-waybar.css"; /* Main pywal color file */
+
+/* ============================================================
+   1. MAIN DUNST WINDOW
+   ============================================================ */
+
+#Dunst {
+    background-color: rgba(0, 0, 0, 0.92);
+    border: 2px solid @color9;
+    border-radius: 25px;
+}
+
+/* ============================================================
+   2. INDIVIDUAL NOTIFICATIONS
+   ============================================================ */
+
+.notification {
+    background-color: rgba(0, 0, 0, 0.90);
+    border: 2px solid @color9;
+    border-radius: 20px;
+    margin: 8px;
+    padding: 12px;
+}
+
+/* ============================================================
+   3. TEXT CONTENT
+   ============================================================ */
+
+.summary {
+    font-weight: 800;
+    font-size: 16px;
+    color: @color9;
+    margin-bottom: 4px;
+}
+
+.body {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* ============================================================
+   4. ICON / IMAGE
+   ============================================================ */
+
+.icon {
+    margin: 5px 15px 5px 0px;
+}
+
+.image {
+    margin: 5px 15px 5px 0px;
+    border-radius: 10px;
+}
+
+/* ============================================================
+   5. URGENCY STATES
+   ============================================================ */
+
+.critical {
+    border: 2px solid #ff5555;
+}
+
+.normal {
+    border: 2px solid @color9;
+}
+
+.low {
+    border: 2px solid #555555;
+}
+
+/* ============================================================
+   6. CLOSE BUTTON
+   ============================================================ */
+
+.close-button {
+    background: transparent;
+    color: @color9;
+    border: none;
+}
+
+.close-button:hover {
+    color: #ffffff;
+    background: transparent;
+}
+
+/* ============================================================
+   7. PROGRESS BAR
+   ============================================================ */
+
+.progress {
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 10px;
+}
+
+.progressbar {
+    background-color: @color9;
+    border-radius: 10px;
+}
+
+/* ============================================================
+   8. STACKED / GROUPED NOTIFICATIONS
+   ============================================================ */
+
+.notification-group {
+    background: transparent;
+    border: none;
+}
+
+.notification-group-header {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ============================================================
+   9. HOVER EFFECT
+   ============================================================ */
+
+.notification:hover {
+    background-color: rgba(255,255,255,0.03);
+}
